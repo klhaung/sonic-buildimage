@@ -140,3 +140,6 @@ ptp_bs_fref_0
 ptp_bs_fref_1
 ifp_inports_support_enable
 port_flex_enable
+pdma_dv_free_count
+pdma_dv_free_size
+pdma_descriptor_prefetch_enable
