@@ -218,15 +218,16 @@ def install():
     return
 
 def uninstall():
-    global FORCE
+    pass
+#    global FORCE
     #uninstall drivers
-    for i in range(len(drivers)-1,-1,-1):
-       status, output = exec_cmd("rmmod "+drivers[i], 1)
-    if status:
-	   print output
-	   if FORCE == 0:                
-	      return status             
-    return
+#    for i in range(len(drivers)-1,-1,-1):
+#       status, output = exec_cmd("rmmod "+drivers[i], 1)
+#    if status:
+#	   print output
+#	   if FORCE == 0:
+#	      return status
+#    return
 
 def device_found():
     ret1, log = exec_cmd("ls "+i2c_prefix+"*0072", 0)

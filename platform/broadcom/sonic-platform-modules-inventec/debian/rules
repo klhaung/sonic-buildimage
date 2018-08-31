@@ -17,7 +17,7 @@ MOD_SRC_DIR:= $(shell pwd)
 MODULE_DIRS:= d7032q28b d7054q28b d6254qs d6556 d7264q28b
 
 %:
-	dh $@
+	dh $@ --with=systemd
 
 override_dh_auto_build:
 	(for mod in $(MODULE_DIRS); do \
